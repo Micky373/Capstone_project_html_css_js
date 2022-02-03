@@ -15,9 +15,9 @@
 
 [Click here to see the Portfolio Web](https://yersel500.github.io/capstone-project-yh/)
 
-![image](./Desktop_version_snap.png)
+![image](./Desktop_version_snap.PNG)
 
-![image](./Mobile_version_snap.png)
+![image](./Mobile_version_snap.PNG)
 
 [Video of the project]()
 
