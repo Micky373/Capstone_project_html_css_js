@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Click here to see the Portfolio Web](https://yersel500.github.io/capstone-project-yh/)
+[Click here to see the Portfolio Web](https://micky373.github.io/Capstone_project_html_css_js/)
 
 ![image](./Desktop_version_snap.PNG)
 
