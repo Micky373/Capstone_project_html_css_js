@@ -471,9 +471,9 @@ h1 {
   .desktop_navbar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
     width: auto;
     color: #343435;
     background: white;
@@ -482,17 +482,28 @@ h1 {
 
   .page_bar {
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
     margin-right: 5%;
+    padding-left: 3rem;
   }
 
   .menu_logo {
     height: 3rem;
     margin: 1rem 0;
-    padding-left: 3rem;
+    padding-left: 8rem;
+    padding-right: 6rem;
   }
 
-  .page_bar a {
+  .page_bar a{
+    text-decoration: none;
+  }
+
+  .page_bar #about_link {
+    text-decoration: none;
+    color: #ec5242;
+  }
+
+  .page_bar #program_link{
     text-decoration: none;
     color: #343435;
   }
@@ -500,15 +511,19 @@ h1 {
   h4 {
     margin: 0;
     font-family: cocogoose_l, sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .logo_heading {
     margin: 0;
     font-family: cocogoose_l, sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #ec5242;
-    padding-right: 1rem;
+    padding: 1rem;    
+    border-color: #ec5242;
+    border-style: solid;
+    border-width: 0.25rem;
+    text-align: center;
   }
 
   h2 {
