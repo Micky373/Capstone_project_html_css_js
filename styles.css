@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
 .hamburger {
   color: #272a31;
   padding: 1rem;
@@ -18,8 +27,72 @@
   src: url(./fonts/Cocogoose\ Pro\ Light\ Italic-trial.ttf) format("truetype");
 }
 
-body {
-  margin: 0;
+.nav_bar .open {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(60, 58, 57, 0.95);
+  justify-content: space-around;
+  gap: 60%;
+  align-items: center;
+  height: 50px;
+  color: white;
+}
+
+.nav_bar .menu_items {
+  display: none;
+}
+
+.nav_bar .appear {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(60, 58, 57, 0.95);
+  justify-content: flex-start;
+  height: 100vh;
+  color: white;
+  margin-top: 0;
+}
+
+.menu_items li hr {
+  width: 90%;
+  border: 1px solid #6f6c6b;
+  margin: 10px 0 10px 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu_items li {
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  padding: 24px 0 10px 30px;
+}
+
+.menu_items a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
+.menu_items .close_button {
+  display: flex;
+}
+
+.menu_items .close_button .x_sign {
+  padding: 15px 0 20px 85%;
+  width: 25px;
+  height: 25px;
+  transform: scale(1);
 }
 
 .home_page,
@@ -111,6 +184,33 @@ hr {
   width: 15%;
 }
 
+.flex_container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
+  margin: 1rem;
+  background-color: rgba(57, 60, 67, 0.7);
+  border-radius: 1em;
+}
+
+.flex_container img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.flex_container h1 {
+  font-size: 1rem;
+  font-family: cocogoose, sans-serif;
+}
+
+.flex_container .program_description {
+  width: 50%;
+  font-size: 0.9em;
+  font-family: Lato, sans-serif;
+  color: white;
+}
+
 .main_program button {
   height: 60px;
   width: 250px;
@@ -141,10 +241,19 @@ hr {
   font-family: cocogoose_l;
   font-size: 1em;
   margin-left: 10%;
+  margin-top: 2rem;
 }
 
 .display_more {
   color: red;
+}
+
+.display_less {
+  color: green;
+}
+
+#dissapear {
+  display: none;
 }
 
 .featured_speakers h1 {
@@ -163,9 +272,41 @@ hr {
 }
 
 .speakers_list {
-  height: 5rem;
+  height: auto;
 }
 
+.speaker_container {
+  display: flex;
+  padding-right: 1rem;
+}
+
+.speaker_container img {
+  width: 9rem;
+  height: 9rem;
+  margin: 1rem;
+}
+
+.speaker_container h1 {
+  font-size: 1rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.speaker_container h2 {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 0;
+  padding: 0;
+}
+
+.speaker_container hr {
+  margin-left: 0;
+}
+
+.speaker_container p {
+  font-family: cocogoose_l, sans-serif;
+  font-size: 0.8rem;
+}
 .list_of_partners {
   background-color: #3f444f;
   margin-top: 3rem;
@@ -175,6 +316,18 @@ hr {
 .about_list_of_partners {
   background-color: #3f444f;
   padding-top: 2rem;
+}
+
+.about_list_of_partners h1,
+.list_of_partners h1 {
+  color: white;
+  font-family: cocogoose_l, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
 }
 
 .logo_container {
@@ -187,10 +340,6 @@ hr {
   width: 8rem;
   height: 2rem;
   margin: 1rem;
-}
-
-.partners h1 {
-  color: black;
 }
 
 .footer {
@@ -269,6 +418,7 @@ hr {
   align-items: center;
   gap: 1rem;
 }
+
 .images_of_last_summits img {
   width: auto;
   height: 10rem;

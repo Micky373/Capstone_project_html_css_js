@@ -19,7 +19,28 @@
     <div class="about_page">
       <div class="about_main_page">
         <div class="nav_bar">
-          <i class="fa fa-bars hamburger fa-2x" aria-hidden="true"></i>
+          <i
+            class="fa fa-bars hamburger fa-2x"
+            aria-hidden="true"
+            id="hamburger"
+          ></i>
+          <ul class="menu_items">
+            <li class="close_button">
+              <img
+                class="x_sign"
+                src="./images/close_btn.svg"
+                alt="Closing menu button"
+              />
+            </li>
+            <li class="goto">
+              <a href="./index.html">Home Page</a>
+              <hr />
+            </li>
+            <li class="goto">
+              <a href="./about.html">About</a>
+              <hr />
+            </li>
+          </ul>
         </div>
         <h2>"Hello! Sharing world"</h2>
         <h1>
@@ -83,7 +104,7 @@
       </div>
     </div>
     <div class="about_list_of_partners">
-      <h1 class="main_page_headlines">Partner</h1>
+      <h1>Partners</h1>
       <hr />
       <div class="logo_container">
         <img src="./images/mozilla.png" class="partners" alt="mozilla logo" />
@@ -108,5 +129,6 @@
         Some Rights Reserved.<br />
       </p>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
