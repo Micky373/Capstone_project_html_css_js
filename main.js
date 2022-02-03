@@ -134,8 +134,7 @@ const displayTheRest = function () {
     displayMore.innerHTML = `Less
         <span class="display_less"><i class="fa fa-angle-up" aria-hidden="true"></i
         ></span>`;
-  }
-  else {
+  } else {
     for (let i = 2; i < speakerContainer.length; i += 1) {
       speakerContainer[i].id = 'dissapear';
     }
