@@ -87,21 +87,20 @@ const speakers = [
 ];
 let programTemplate = '';
 for (let i = 0; i < programs.length; i += 1) {
-  programTemplate +=
-    `<div class="program_${i + 1} flex_container">
+  programTemplate += `
+        <div class="program_${i + 1} flex_container">
             <img src="${programs[i].image}">
             <h1 class="program_headline">${programs[i].title}</h1>
             <p class="program_description">${programs[i].description}</p>
-        </div>`
+        </div>`;
 }
 
-programContainer.innerHTML = programTemplate
+programContainer.innerHTML = programTemplate;
 
 let speakersTemplate = '';
-let count = 0;
 for (let i = 0; i < 2; i += 1) {
-  speakersTemplate +=
-    `<div class="speaker_container">
+  speakersTemplate += `
+        <div class="speaker_container">
             <img src="./images/${speakers[i].image}">
             <div class="speaker_description">
                 <h1>${speakers[i].name}</h1>
@@ -109,13 +108,12 @@ for (let i = 0; i < 2; i += 1) {
                 <hr>
                 <p>${speakers[i].description}</p>
             </div>
-        </div>`
-
+        </div>`;
 }
 
 for (let i = 2; i < speakers.length; i += 1) {
-  speakersTemplate +=
-    `<div class="speaker_container" id="dissapear">
+  speakersTemplate += `
+        <div class="speaker_container" id="dissapear">
             <img src="./images/${speakers[i].image}">
             <div class="speaker_description">
                 <h1>${speakers[i].name}</h1>
@@ -123,28 +121,27 @@ for (let i = 2; i < speakers.length; i += 1) {
                 <hr>
                 <p>${speakers[i].description}</p>
             </div>
-        </div>`
+        </div>`;
 }
 
-speakersList.innerHTML = speakersTemplate
-const speakerContainer = document.querySelectorAll('.speaker_container')
-displayTheRest = function () {
-  if (speakerContainer[2].id == "dissapear") {
-    for (let i = 2; i < speakerContainer.length; i++) {
-      speakerContainer[i].removeAttribute('id')
+speakersList.innerHTML = speakersTemplate;
+const speakerContainer = document.querySelectorAll('.speaker_container');
+const displayTheRest = function () {
+  if (speakerContainer[2].id === 'dissapear') {
+    for (let i = 2; i < speakerContainer.length; i += 1) {
+      speakerContainer[i].removeAttribute('id');
     }
     displayMore.innerHTML = `Less
         <span class="display_less"><i class="fa fa-angle-up" aria-hidden="true"></i
-        ></span>`
+        ></span>`;
   }
   else {
     for (let i = 2; i < speakerContainer.length; i++) {
-      speakerContainer[i].id = 'dissapear'
+      speakerContainer[i].id = 'dissapear';
     }
     displayMore.innerHTML = `More
-            <span class="display_more">v</span>`
+            <span class="display_more">v</span>`;
   }
 }
 
-
-displayMore.onclick = displayTheRest
+displayMore.onclick = displayTheRest;
