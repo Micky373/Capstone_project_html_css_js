@@ -19,7 +19,7 @@
 
 ![image](./Mobile_version_snap.PNG)
 
-[Video of the project]()
+[Video of the project](https://www.loom.com/share/6db5fb035cae4a2cb818fdfb2d29c808)
 
 ## Getting Started
 
