@@ -199,6 +199,10 @@ hr {
   border-radius: 1em;
 }
 
+.flex_container:hover {
+  box-shadow: 0.05rem 0.05rem 2rem;
+}
+
 .flex_container img {
   width: 3rem;
   height: 3rem;
