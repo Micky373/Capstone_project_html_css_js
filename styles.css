@@ -471,7 +471,6 @@ h1 {
   .desktop_navbar {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     align-items: center;
     gap: 4rem;
     width: auto;
@@ -494,7 +493,7 @@ h1 {
     padding-right: 6rem;
   }
 
-  .page_bar a{
+  .page_bar a {
     text-decoration: none;
   }
 
@@ -503,7 +502,7 @@ h1 {
     color: #ec5242;
   }
 
-  .page_bar #program_link{
+  .page_bar #program_link {
     text-decoration: none;
     color: #343435;
   }
@@ -519,7 +518,7 @@ h1 {
     font-family: cocogoose_l, sans-serif;
     font-size: 1rem;
     color: #ec5242;
-    padding: 1rem;    
+    padding: 1rem;
     border-color: #ec5242;
     border-style: solid;
     border-width: 0.25rem;
