@@ -136,12 +136,12 @@ const displayTheRest = function () {
         ></span>`;
   }
   else {
-    for (let i = 2; i < speakerContainer.length; i++) {
+    for (let i = 2; i < speakerContainer.length; i += 1) {
       speakerContainer[i].id = 'dissapear';
     }
     displayMore.innerHTML = `More
             <span class="display_more">v</span>`;
   }
-}
+};
 
 displayMore.onclick = displayTheRest;
